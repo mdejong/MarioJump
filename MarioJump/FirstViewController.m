@@ -142,6 +142,8 @@
 
 - (IBAction) jumpButtonPress
 {
+  NSLog( @"jumpButtonPress with dimensions %d x %d", (int)self.marioView.frame.size.width, (int)self.marioView.frame.size.height );
+  
   BOOL isAnimating = [self.marioMedia isAnimatorRunning];
   
   if (isAnimating) {
