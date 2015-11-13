@@ -8,6 +8,8 @@
 
 #import "SecondViewController.h"
 
+#import "common.h"
+
 @interface SecondViewController ()
 
 @end

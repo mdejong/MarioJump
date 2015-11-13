@@ -8,11 +8,31 @@
 
 #import "FirstViewController.h"
 
-#define ENABLE_SOUND
+#import "AutoTimer.h"
+
+#import "common.h"
+
+#import "AVAnimatorView.h"
+
+#import "AVAnimatorMedia.h"
+
+#import "AVMvidFrameDecoder.h"
+
+#import "AVAssetJoinAlphaResourceLoader.h"
+
+#import "AVFileUtil.h"
 
 @interface FirstViewController ()
 
-@property (nonatomic, retain) IBOutlet UIImageView *buttonImageView;
+@property (nonatomic, retain) AutoTimer *timer;
+
+@property (nonatomic, retain) IBOutlet UIButton *button;
+
+@property (nonatomic, retain) IBOutlet UILabel *label;
+
+@property (nonatomic, retain) IBOutlet AVAnimatorView *marioView;
+
+@property (nonatomic, retain) AVAnimatorMedia *marioMedia;
 
 @end
 
@@ -21,8 +41,89 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
+
+  NSAssert(self.label, @"label");
   
-  NSAssert(self.buttonImageView, @"buttonImageView");
+  NSAssert(self.button, @"button");
+
+  NSAssert(self.marioView, @"marioView");
+  
+  self.marioView.hidden = TRUE;
+  
+  self.timer = [AutoTimer autoTimerWithTimeInterval:1.0 target:self selector:@selector(timerFired) userInfo:nil repeats:FALSE];
+
+  self.marioMedia = [AVAnimatorMedia aVAnimatorMedia];
+  
+  [self prepareMedia];
+}
+
+// Prep the mario media
+
+- (void) prepareMedia
+{
+  NSString *rgbResourceName;
+  NSString *alphaResourceName;
+  NSString *rgbTmpMvidFilename;
+  NSString *rgbTmpMvidPath;
+  
+  rgbResourceName = @"MarioRendered_960_640_rgb_CRF_20_24BPP.m4v";
+  alphaResourceName = @"MarioRendered_960_640_alpha_CRF_20_24BPP.m4v";
+  rgbTmpMvidFilename = @"MarioRendered.mvid";
+
+  rgbTmpMvidPath = [AVFileUtil getTmpDirPath:rgbTmpMvidFilename];
+  
+  NSLog(@"loading %@", rgbTmpMvidPath);
+  
+  AVAnimatorMedia *media = [AVAnimatorMedia aVAnimatorMedia];
+  
+  self.marioMedia = media;
+  
+  AVAssetJoinAlphaResourceLoader *resLoader = [AVAssetJoinAlphaResourceLoader aVAssetJoinAlphaResourceLoader];
+  
+  resLoader.movieRGBFilename = rgbResourceName;
+  resLoader.movieAlphaFilename = alphaResourceName;
+  resLoader.outPath = rgbTmpMvidPath;
+  resLoader.alwaysGenerateAdler = TRUE;
+  
+  media.resourceLoader = resLoader;
+  
+  AVMvidFrameDecoder *frameDecoder = [AVMvidFrameDecoder aVMvidFrameDecoder];
+  media.frameDecoder = frameDecoder;
+  
+  [media prepareToAnimate];
+  
+  return;
+}
+
+// Hide the Label and show Mario
+
+- (void) timerFired {
+  self.timer = nil;
+
+  self.label.hidden = TRUE;
+  
+  self.marioView.backgroundColor = [UIColor greenColor];
+  
+  self.marioView.hidden = FALSE;
+  
+  [self.marioView attachMedia:self.marioMedia];
+
+  [self.marioMedia startAnimator];
+  
+  return;
+}
+
+- (IBAction) jumpButtonPress
+{
+  BOOL isAnimating = [self.marioMedia isAnimatorRunning];
+  
+  if (isAnimating) {
+    self.marioMedia.animatorRepeatCount += 1;
+  } else {
+    [self.marioMedia startAnimator];
+  }
+  
+  return;
 }
 
 @end

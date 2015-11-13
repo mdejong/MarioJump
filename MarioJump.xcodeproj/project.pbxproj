@@ -74,6 +74,8 @@
 		3C13DE1E1BF682F60013C7CA /* sm64_mario_yippee.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE1A1BF682F60013C7CA /* sm64_mario_yippee.wav */; settings = {ASSET_TAGS = (); }; };
 		3C13DE211BF6870E0013C7CA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C13DE201BF6870E0013C7CA /* libz.tbd */; };
 		3C13DE241BF68A0A0013C7CA /* AutoTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13DE231BF68A0A0013C7CA /* AutoTimer.m */; settings = {ASSET_TAGS = (); }; };
+		3C13DE271BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
+		3C13DE281BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -207,6 +209,8 @@
 		3C13DE201BF6870E0013C7CA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3C13DE221BF68A0A0013C7CA /* AutoTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoTimer.h; sourceTree = "<group>"; };
 		3C13DE231BF68A0A0013C7CA /* AutoTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTimer.m; sourceTree = "<group>"; };
+		3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_alpha_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
+		3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_rgb_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +267,8 @@
 		3C13DD551BF680180013C7CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */,
+				3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */,
 				3C13DD6F1BF681D40013C7CA /* RedButtonDownAlpha.png */,
 				3C13DD701BF681D40013C7CA /* RedButtonUpAlpha.png */,
 				3C13DE171BF682F60013C7CA /* sm64_mario_hoo.wav */,
@@ -474,6 +480,8 @@
 				3C13DD681BF680190013C7CA /* LaunchScreen.storyboard in Resources */,
 				3C13DE1D1BF682F60013C7CA /* sm64_mario_its_me.wav in Resources */,
 				3C13DD651BF680190013C7CA /* Assets.xcassets in Resources */,
+				3C13DE271BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v in Resources */,
+				3C13DE281BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v in Resources */,
 				3C13DE1B1BF682F60013C7CA /* sm64_mario_hoo.wav in Resources */,
 				3C13DD711BF681D40013C7CA /* RedButtonDownAlpha.png in Resources */,
 				3C13DD721BF681D40013C7CA /* RedButtonUpAlpha.png in Resources */,
@@ -662,6 +670,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comp.helpurock.MarioJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -674,6 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comp.helpurock.MarioJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

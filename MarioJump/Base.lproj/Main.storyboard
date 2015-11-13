@@ -18,27 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Mario Jump!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mario Jump!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="201" y="279" width="199" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="RedButtonUpAlpha.png" translatesAutoresizingMaskIntoConstraints="NO" id="H3n-3o-PUL">
-                                <rect key="frame" x="466" y="61" width="72" height="61"/>
-                            </imageView>
+                            <view contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Xk-pF-Kff" userLabel="marioView" customClass="AVAnimatorView">
+                                <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk5-UP-xZa">
+                                <rect key="frame" x="518" y="50" width="72" height="61"/>
+                                <state key="normal" image="RedButtonUpAlpha.png"/>
+                                <state key="highlighted" image="RedButtonDownAlpha.png"/>
+                                <connections>
+                                    <action selector="jumpButtonPress" destination="9pv-A4-QxB" eventType="touchUpInside" id="sT4-iY-cKy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="H3n-3o-PUL" firstAttribute="right" secondItem="tsR-hK-woN" secondAttribute="rightMargin" constant="100" id="Huf-Ib-dtx"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="TcJ-GC-cQv"/>
+                            <constraint firstItem="wk5-UP-xZa" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="ZC7-wo-DiD"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="a8l-QU-NXi"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wk5-UP-xZa" secondAttribute="trailing" constant="-10" id="n0J-T3-v0K"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="AVAnimator" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="buttonImageView" destination="H3n-3o-PUL" id="LPp-mE-wwF"/>
+                        <outlet property="button" destination="wk5-UP-xZa" id="umv-FR-Y4U"/>
+                        <outlet property="label" destination="KQZ-1w-vlD" id="fvt-yD-duX"/>
+                        <outlet property="marioView" destination="8Xk-pF-Kff" id="JzR-I8-PfJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -106,6 +120,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="RedButtonDownAlpha.png" width="72" height="61"/>
         <image name="RedButtonUpAlpha.png" width="72" height="61"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
