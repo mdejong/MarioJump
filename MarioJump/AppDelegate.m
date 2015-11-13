@@ -8,7 +8,19 @@
 
 #import "AppDelegate.h"
 
+#import "AutoTimer.h"
+
+#import "common.h"
+
+#ifdef ENABLE_SOUND
+#import <AVFoundation/AVAudioPlayer.h>
+#endif // ENABLE_SOUND
+
 @interface AppDelegate ()
+
+@property (nonatomic, retain) AVAudioPlayer *introAudioPlayer;
+
+@property (nonatomic, retain) AutoTimer *introAudioTimer;
 
 @end
 
@@ -17,7 +29,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+  
+#ifdef ENABLE_SOUND
+  {
+    NSString *resFilename = @"sm64_mario_its_me.wav";
+    NSString* resPath = [[NSBundle mainBundle] pathForResource:resFilename ofType:nil];
+    NSAssert(resPath, @"resPath is nil");
+    NSURL *url = [NSURL fileURLWithPath:resPath];
+    
+    AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    
+    self.introAudioPlayer = player;
+    
+    [self.introAudioPlayer prepareToPlay];
+    [self.introAudioPlayer play];
+    
+    self.introAudioTimer = [AutoTimer autoTimerWithTimeInterval:2.0 target:self selector:@selector(timerFired) userInfo:nil repeats:FALSE];
+  }
+#endif // ENABLE_SOUND
+  
   return YES;
+}
+
+- (void) timerFired {
+  self.introAudioTimer = nil;
+  
+  [self.introAudioPlayer stop];
+  self.introAudioPlayer = nil;
+  
+  return;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
