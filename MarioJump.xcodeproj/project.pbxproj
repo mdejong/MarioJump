@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C13DD571BF680180013C7CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13DD561BF680180013C7CA /* main.m */; };
+		3C13DD5A1BF680190013C7CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13DD591BF680190013C7CA /* AppDelegate.m */; };
+		3C13DD5D1BF680190013C7CA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13DD5C1BF680190013C7CA /* FirstViewController.m */; };
+		3C13DD601BF680190013C7CA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13DD5F1BF680190013C7CA /* SecondViewController.m */; };
+		3C13DD631BF680190013C7CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DD611BF680190013C7CA /* Main.storyboard */; };
+		3C13DD651BF680190013C7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DD641BF680190013C7CA /* Assets.xcassets */; };
+		3C13DD681BF680190013C7CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DD661BF680190013C7CA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C13DD521BF680180013C7CA /* MarioJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarioJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C13DD561BF680180013C7CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C13DD581BF680180013C7CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C13DD591BF680190013C7CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C13DD5B1BF680190013C7CA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		3C13DD5C1BF680190013C7CA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		3C13DD5E1BF680190013C7CA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		3C13DD5F1BF680190013C7CA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		3C13DD621BF680190013C7CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C13DD641BF680190013C7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C13DD671BF680190013C7CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C13DD691BF680190013C7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C13DD4F1BF680180013C7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C13DD491BF680180013C7CA = {
+			isa = PBXGroup;
+			children = (
+				3C13DD541BF680180013C7CA /* MarioJump */,
+				3C13DD531BF680180013C7CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C13DD531BF680180013C7CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C13DD521BF680180013C7CA /* MarioJump.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C13DD541BF680180013C7CA /* MarioJump */ = {
+			isa = PBXGroup;
+			children = (
+				3C13DD581BF680180013C7CA /* AppDelegate.h */,
+				3C13DD591BF680190013C7CA /* AppDelegate.m */,
+				3C13DD5B1BF680190013C7CA /* FirstViewController.h */,
+				3C13DD5C1BF680190013C7CA /* FirstViewController.m */,
+				3C13DD5E1BF680190013C7CA /* SecondViewController.h */,
+				3C13DD5F1BF680190013C7CA /* SecondViewController.m */,
+				3C13DD611BF680190013C7CA /* Main.storyboard */,
+				3C13DD641BF680190013C7CA /* Assets.xcassets */,
+				3C13DD661BF680190013C7CA /* LaunchScreen.storyboard */,
+				3C13DD691BF680190013C7CA /* Info.plist */,
+				3C13DD551BF680180013C7CA /* Supporting Files */,
+			);
+			path = MarioJump;
+			sourceTree = "<group>";
+		};
+		3C13DD551BF680180013C7CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C13DD561BF680180013C7CA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C13DD511BF680180013C7CA /* MarioJump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C13DD6C1BF680190013C7CA /* Build configuration list for PBXNativeTarget "MarioJump" */;
+			buildPhases = (
+				3C13DD4E1BF680180013C7CA /* Sources */,
+				3C13DD4F1BF680180013C7CA /* Frameworks */,
+				3C13DD501BF680180013C7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarioJump;
+			productName = MarioJump;
+			productReference = 3C13DD521BF680180013C7CA /* MarioJump.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C13DD4A1BF680180013C7CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = helpurock;
+				TargetAttributes = {
+					3C13DD511BF680180013C7CA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 3C13DD4D1BF680180013C7CA /* Build configuration list for PBXProject "MarioJump" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C13DD491BF680180013C7CA;
+			productRefGroup = 3C13DD531BF680180013C7CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C13DD511BF680180013C7CA /* MarioJump */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C13DD501BF680180013C7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C13DD681BF680190013C7CA /* LaunchScreen.storyboard in Resources */,
+				3C13DD651BF680190013C7CA /* Assets.xcassets in Resources */,
+				3C13DD631BF680190013C7CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C13DD4E1BF680180013C7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C13DD601BF680190013C7CA /* SecondViewController.m in Sources */,
+				3C13DD5A1BF680190013C7CA /* AppDelegate.m in Sources */,
+				3C13DD5D1BF680190013C7CA /* FirstViewController.m in Sources */,
+				3C13DD571BF680180013C7CA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C13DD611BF680190013C7CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C13DD621BF680190013C7CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C13DD661BF680190013C7CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C13DD671BF680190013C7CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C13DD6A1BF680190013C7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C13DD6B1BF680190013C7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C13DD6D1BF680190013C7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MarioJump/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = comp.helpurock.MarioJump;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C13DD6E1BF680190013C7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MarioJump/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = comp.helpurock.MarioJump;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C13DD4D1BF680180013C7CA /* Build configuration list for PBXProject "MarioJump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C13DD6A1BF680190013C7CA /* Debug */,
+				3C13DD6B1BF680190013C7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C13DD6C1BF680190013C7CA /* Build configuration list for PBXNativeTarget "MarioJump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C13DD6D1BF680190013C7CA /* Debug */,
+				3C13DD6E1BF680190013C7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C13DD4A1BF680180013C7CA /* Project object */;
+}
