@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--AVAnimator-->
@@ -18,6 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tzi-0j-Ru2" userLabel="Castle">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xk-pF-Kff" userLabel="marioView" customClass="AVAnimatorView">
+                                <rect key="frame" x="0.0" y="-100" width="600" height="800"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mario Jump!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="201" y="279" width="199" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -25,13 +34,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tzi-0j-Ru2" userLabel="Castle">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <view contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Xk-pF-Kff" userLabel="marioView" customClass="AVAnimatorView">
-                                <rect key="frame" x="300" y="320" width="0.0" height="0.0"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk5-UP-xZa">
                                 <rect key="frame" x="518" y="50" width="72" height="61"/>
                                 <state key="normal" image="RedButtonUpAlpha.png"/>
@@ -44,10 +46,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="4:3" id="6tG-SV-J1k"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Cnn-YO-cVP"/>
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="TcJ-GC-cQv"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="1:1" id="WML-fa-KEW"/>
                             <constraint firstItem="wk5-UP-xZa" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="ZC7-wo-DiD"/>
-                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="20" id="a8l-QU-NXi"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="a8l-QU-NXi"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="eUA-k6-8ux"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="gg1-zS-Qa5"/>

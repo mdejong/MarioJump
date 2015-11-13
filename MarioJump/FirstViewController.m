@@ -129,7 +129,7 @@
 //  self.marioView.backgroundColor = [UIColor greenColor];
 //  self.marioView.backgroundColor = [UIColor blueColor];
 //  self.marioView.backgroundColor = [UIColor redColor];  
-  self.marioView.backgroundColor = [UIColor clearColor];
+//  self.marioView.backgroundColor = [UIColor clearColor];
   
   self.marioView.hidden = FALSE;
   
