@@ -76,6 +76,7 @@
 		3C13DE241BF68A0A0013C7CA /* AutoTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13DE231BF68A0A0013C7CA /* AutoTimer.m */; settings = {ASSET_TAGS = (); }; };
 		3C13DE271BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
 		3C13DE281BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
+		3C13DE2A1BF6A5130013C7CA /* castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE291BF6A5130013C7CA /* castle.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,6 +212,7 @@
 		3C13DE231BF68A0A0013C7CA /* AutoTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTimer.m; sourceTree = "<group>"; };
 		3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_alpha_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
 		3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_rgb_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
+		3C13DE291BF6A5130013C7CA /* castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castle.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 		3C13DD551BF680180013C7CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C13DE291BF6A5130013C7CA /* castle.jpg */,
 				3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */,
 				3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */,
 				3C13DD6F1BF681D40013C7CA /* RedButtonDownAlpha.png */,
@@ -477,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C13DE1C1BF682F60013C7CA /* sm64_mario_hoohoo.wav in Resources */,
+				3C13DE2A1BF6A5130013C7CA /* castle.jpg in Resources */,
 				3C13DD681BF680190013C7CA /* LaunchScreen.storyboard in Resources */,
 				3C13DE1D1BF682F60013C7CA /* sm64_mario_its_me.wav in Resources */,
 				3C13DD651BF680190013C7CA /* Assets.xcassets in Resources */,

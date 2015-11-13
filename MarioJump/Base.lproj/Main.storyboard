@@ -25,6 +25,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tzi-0j-Ru2" userLabel="Castle">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <view contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Xk-pF-Kff" userLabel="marioView" customClass="AVAnimatorView">
                                 <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,11 +44,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="tzi-0j-Ru2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Cnn-YO-cVP"/>
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="TcJ-GC-cQv"/>
                             <constraint firstItem="wk5-UP-xZa" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="ZC7-wo-DiD"/>
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="a8l-QU-NXi"/>
+                            <constraint firstItem="tzi-0j-Ru2" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="eUA-k6-8ux"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="tzi-0j-Ru2" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="gg1-zS-Qa5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wk5-UP-xZa" secondAttribute="trailing" constant="-10" id="n0J-T3-v0K"/>
+                            <constraint firstItem="tzi-0j-Ru2" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="sRY-nB-Iek"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="AVAnimator" image="first" id="acW-dT-cKf"/>
@@ -122,6 +129,7 @@
     <resources>
         <image name="RedButtonDownAlpha.png" width="72" height="61"/>
         <image name="RedButtonUpAlpha.png" width="72" height="61"/>
+        <image name="castle.jpg" width="1600" height="1200"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

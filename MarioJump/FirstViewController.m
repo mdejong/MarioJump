@@ -89,10 +89,34 @@
   
   AVMvidFrameDecoder *frameDecoder = [AVMvidFrameDecoder aVMvidFrameDecoder];
   media.frameDecoder = frameDecoder;
+
+#ifdef ENABLE_SOUND
+  resLoader.audioFilename = @"sm64_mario_hoohoo.wav";
+#endif
   
   [media prepareToAnimate];
   
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(animatorDoneNotification:)
+                                               name:AVAnimatorDoneNotification
+                                             object:media];
+  
   return;
+}
+
+// When done animating a clip, rewind to frame 0 so that Mario's eye close
+
+- (void)animatorDoneNotification:(NSNotification*)notification {
+  NSLog( @"animatorDoneNotification" );
+  
+  if (self.marioMedia.animatorRepeatCount > 0) {
+    // nop since looping
+    NSLog( @"animatorDoneNotification : already looping" );
+  } else {
+    NSLog( @"animatorDoneNotification : show frame 0 for eyes closed" );
+    
+    [self.marioMedia showFrame:0];
+  }
 }
 
 // Hide the Label and show Mario
@@ -102,7 +126,10 @@
 
   self.label.hidden = TRUE;
   
-  self.marioView.backgroundColor = [UIColor greenColor];
+//  self.marioView.backgroundColor = [UIColor greenColor];
+//  self.marioView.backgroundColor = [UIColor blueColor];
+//  self.marioView.backgroundColor = [UIColor redColor];  
+  self.marioView.backgroundColor = [UIColor clearColor];
   
   self.marioView.hidden = FALSE;
   
