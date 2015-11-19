@@ -93,6 +93,12 @@
 #ifdef ENABLE_SOUND
   resLoader.audioFilename = @"sm64_mario_hoohoo.wav";
 #endif
+
+  // Play slowly at half speed
+  media.animatorFrameDuration = AVAnimator5FPS;
+  
+  // Play video quickly (as opposed to 10 FPS)
+//  media.animatorFrameDuration = AVAnimator24FPS;
   
   [media prepareToAnimate];
   

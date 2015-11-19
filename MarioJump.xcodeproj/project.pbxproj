@@ -77,6 +77,7 @@
 		3C13DE271BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
 		3C13DE281BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
 		3C13DE2A1BF6A5130013C7CA /* castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE291BF6A5130013C7CA /* castle.jpg */; settings = {ASSET_TAGS = (); }; };
+		3CCF81081BFB161000E6508B /* MarioRendered_960_640_green.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3CCF81071BFB161000E6508B /* MarioRendered_960_640_green.m4v */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -213,6 +214,7 @@
 		3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_alpha_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
 		3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_rgb_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
 		3C13DE291BF6A5130013C7CA /* castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castle.jpg; sourceTree = "<group>"; };
+		3CCF81071BFB161000E6508B /* MarioRendered_960_640_green.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_green.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 				3C13DE291BF6A5130013C7CA /* castle.jpg */,
 				3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */,
 				3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */,
+				3CCF81071BFB161000E6508B /* MarioRendered_960_640_green.m4v */,
 				3C13DD6F1BF681D40013C7CA /* RedButtonDownAlpha.png */,
 				3C13DD701BF681D40013C7CA /* RedButtonUpAlpha.png */,
 				3C13DE171BF682F60013C7CA /* sm64_mario_hoo.wav */,
@@ -485,6 +488,7 @@
 				3C13DE1D1BF682F60013C7CA /* sm64_mario_its_me.wav in Resources */,
 				3C13DD651BF680190013C7CA /* Assets.xcassets in Resources */,
 				3C13DE271BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v in Resources */,
+				3CCF81081BFB161000E6508B /* MarioRendered_960_640_green.m4v in Resources */,
 				3C13DE281BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v in Resources */,
 				3C13DE1B1BF682F60013C7CA /* sm64_mario_hoo.wav in Resources */,
 				3C13DD711BF681D40013C7CA /* RedButtonDownAlpha.png in Resources */,
@@ -710,6 +714,7 @@
 				3C13DD6E1BF680190013C7CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
