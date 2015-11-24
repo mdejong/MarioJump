@@ -82,29 +82,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-6U-HPN" userLabel="Castle">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsi-fP-AeW" userLabel="marioView" customClass="GPUImageView">
+                                <rect key="frame" x="0.0" y="120" width="600" height="400"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mario Jump 2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5" userLabel="Label">
                                 <rect key="frame" x="191" y="279" width="219" height="42"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-6U-HPN" userLabel="Castle">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSu-vB-NHP">
+                                <rect key="frame" x="478" y="50" width="72" height="61"/>
+                                <state key="normal" image="RedButtonUpAlpha.png"/>
+                                <state key="highlighted" image="RedButtonDownAlpha.png"/>
+                                <connections>
+                                    <action selector="jumpButtonPress" destination="8rJ-Kc-sve" eventType="touchUpInside" id="62g-xX-f4r"/>
+                                    <action selector="jumpButtonPress" destination="9pv-A4-QxB" eventType="touchUpInside" id="bPS-bw-hOD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" id="BP5-4R-bvz"/>
+                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="20" id="D1i-s3-4QW"/>
+                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="2:3" id="Hna-jf-e8J"/>
+                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="ovs-sR-hXV"/>
+                            <constraint firstItem="MSu-vB-NHP" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="30" id="pMC-g2-2c1"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="sJY-Vn-erZ"/>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="vNS-Mb-oYr"/>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="xVO-hI-uO9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MSu-vB-NHP" secondAttribute="trailing" constant="30" id="zTo-AS-DfX"/>
+                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="zld-4F-cau"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="GPUImage" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="label" destination="zEq-FU-wV5" id="dwa-ev-cWh"/>
+                        <outlet property="marioView" destination="Vsi-fP-AeW" id="gYq-SJ-JUo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
