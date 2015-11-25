@@ -90,7 +90,7 @@
   AVMvidFrameDecoder *frameDecoder = [AVMvidFrameDecoder aVMvidFrameDecoder];
   media.frameDecoder = frameDecoder;
 
-#ifdef ENABLE_SOUND
+#if defined(ENABLE_SOUND)
   resLoader.audioFilename = @"sm64_mario_hoohoo.wav";
 #endif
 
@@ -141,8 +141,8 @@
   
 //  self.marioView.backgroundColor = [UIColor greenColor];
 //  self.marioView.backgroundColor = [UIColor blueColor];
-  self.marioView.backgroundColor = [UIColor redColor];
-//  self.marioView.backgroundColor = [UIColor clearColor];
+//  self.marioView.backgroundColor = [UIColor redColor];
+  self.marioView.backgroundColor = [UIColor clearColor];
   
   self.marioView.hidden = FALSE;
   

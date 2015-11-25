@@ -9,6 +9,6 @@
 #ifndef common_h
 #define common_h
 
-#define ENABLE_SOUND
+//#define ENABLE_SOUND
 
 #endif /* common_h */

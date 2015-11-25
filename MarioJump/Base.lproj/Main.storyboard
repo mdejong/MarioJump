@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xk-pF-Kff" userLabel="marioView" customClass="AVAnimatorView">
-                                <rect key="frame" x="0.0" y="120" width="600" height="400"/>
+                                <rect key="frame" x="0.0" y="100" width="600" height="400"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mario Jump!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
@@ -49,7 +49,7 @@
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Cnn-YO-cVP"/>
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="TcJ-GC-cQv"/>
                             <constraint firstItem="wk5-UP-xZa" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="ZC7-wo-DiD"/>
-                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="20" id="a8l-QU-NXi"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="a8l-QU-NXi"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="eUA-k6-8ux"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="gg1-zS-Qa5"/>
@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsi-fP-AeW" userLabel="marioView" customClass="GPUImageView">
-                                <rect key="frame" x="0.0" y="120" width="600" height="400"/>
+                                <rect key="frame" x="0.0" y="100" width="600" height="400"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mario Jump 2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5" userLabel="Label">
@@ -107,7 +107,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" id="BP5-4R-bvz"/>
-                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="20" id="D1i-s3-4QW"/>
+                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="D1i-s3-4QW"/>
                             <constraint firstItem="Vsi-fP-AeW" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="2:3" id="Hna-jf-e8J"/>
                             <constraint firstItem="Vsi-fP-AeW" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="ovs-sR-hXV"/>
                             <constraint firstItem="MSu-vB-NHP" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="30" id="pMC-g2-2c1"/>

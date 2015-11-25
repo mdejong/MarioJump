@@ -84,7 +84,7 @@
   //self.marioView.fillMode = kGPUImageFillModeStretch;
   self.marioView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
   
-  [movieFile startProcessing];
+//  [movieFile startProcessing];
   
   self.movieFile = movieFile;
   
@@ -99,6 +99,8 @@
   self.label.hidden = TRUE;
   
   [self makeVideoPlayer];
+  
+  [self.movieFile startProcessing];
   
   return;
 }

@@ -18,7 +18,9 @@
 
 @interface AppDelegate ()
 
+#ifdef ENABLE_SOUND
 @property (nonatomic, retain) AVAudioPlayer *introAudioPlayer;
+#endif // ENABLE_SOUND
 
 @property (nonatomic, retain) AutoTimer *introAudioTimer;
 
@@ -54,8 +56,10 @@
 - (void) timerFired {
   self.introAudioTimer = nil;
   
+#ifdef ENABLE_SOUND
   [self.introAudioPlayer stop];
   self.introAudioPlayer = nil;
+#endif // ENABLE_SOUND
   
   return;
 }
