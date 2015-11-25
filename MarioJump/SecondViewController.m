@@ -79,4 +79,11 @@
   return;
 }
 
+- (void) viewDidLayoutSubviews
+{
+  [super viewDidLayoutSubviews];
+  
+  NSLog( @"viewDidLayoutSubviews with mario dimensions %d x %d", (int)self.marioView.frame.size.width, (int)self.marioView.frame.size.height );
+}
+
 @end

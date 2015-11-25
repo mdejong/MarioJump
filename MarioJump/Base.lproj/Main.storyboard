@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -49,13 +48,13 @@
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="2:3" id="6tG-SV-J1k"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Cnn-YO-cVP"/>
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="TcJ-GC-cQv"/>
-                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="1:1" id="WML-fa-KEW"/>
                             <constraint firstItem="wk5-UP-xZa" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="ZC7-wo-DiD"/>
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="20" id="a8l-QU-NXi"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="eUA-k6-8ux"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="gg1-zS-Qa5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wk5-UP-xZa" secondAttribute="trailing" constant="10" id="n0J-T3-v0K"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="rEu-C5-j78"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="sRY-nB-Iek"/>
                         </constraints>
                     </view>
@@ -96,7 +95,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSu-vB-NHP">
-                                <rect key="frame" x="478" y="50" width="72" height="61"/>
+                                <rect key="frame" x="498" y="50" width="72" height="61"/>
                                 <state key="normal" image="RedButtonUpAlpha.png"/>
                                 <state key="highlighted" image="RedButtonDownAlpha.png"/>
                                 <connections>
@@ -117,7 +116,7 @@
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="sJY-Vn-erZ"/>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="vNS-Mb-oYr"/>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="xVO-hI-uO9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MSu-vB-NHP" secondAttribute="trailing" constant="30" id="zTo-AS-DfX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MSu-vB-NHP" secondAttribute="trailing" constant="10" id="zTo-AS-DfX"/>
                             <constraint firstItem="Vsi-fP-AeW" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="zld-4F-cau"/>
                         </constraints>
                     </view>

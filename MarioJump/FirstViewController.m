@@ -125,6 +125,13 @@
   }
 }
 
+- (void) viewDidLayoutSubviews
+{
+  [super viewDidLayoutSubviews];
+  
+  NSLog( @"viewDidLayoutSubviews with mario dimensions %d x %d", (int)self.marioView.frame.size.width, (int)self.marioView.frame.size.height );
+}
+
 // Hide the Label and show Mario
 
 - (void) timerFired {
@@ -134,7 +141,7 @@
   
 //  self.marioView.backgroundColor = [UIColor greenColor];
 //  self.marioView.backgroundColor = [UIColor blueColor];
-//  self.marioView.backgroundColor = [UIColor redColor];  
+  self.marioView.backgroundColor = [UIColor redColor];
 //  self.marioView.backgroundColor = [UIColor clearColor];
   
   self.marioView.hidden = FALSE;
