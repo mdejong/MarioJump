@@ -122,15 +122,9 @@
 {
   NSLog( @"jumpButtonPress with dimensions %d x %d", (int)self.marioView.frame.size.width, (int)self.marioView.frame.size.height );
   
-//  BOOL isAnimating = [self.marioMedia isAnimatorRunning];
-//  
-//  if (isAnimating) {
-//    self.marioMedia.animatorRepeatCount += 1;
-//  } else {
-//    [self.marioMedia startAnimator];
-//  }
-  
   [self makeVideoPlayer];
+  
+  [self.movieFile startProcessing];
   
   return;
 }
