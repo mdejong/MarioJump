@@ -54,9 +54,13 @@
   [self.movieFile cancelProcessing];
   self.movieFile = nil;
   
-  //  self.marioView.backgroundColor = [UIColor blueColor];
-  self.marioView.backgroundColor = [UIColor redColor];
-  //  self.marioView.backgroundColor = [UIColor clearColor];
+  //self.marioView.backgroundColor = [UIColor blueColor];
+  
+  //self.marioView.backgroundColor = [UIColor redColor];
+  
+  //self.marioView.backgroundColor = [UIColor greenColor];
+  
+  self.marioView.backgroundColor = [UIColor clearColor];
   
   self.marioView.opaque = FALSE;
   
@@ -77,7 +81,8 @@
   
   [filter addTarget:self.marioView];
   
-  self.marioView.fillMode = kGPUImageFillModeStretch;
+  //self.marioView.fillMode = kGPUImageFillModeStretch;
+  self.marioView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
   
   [movieFile startProcessing];
   
