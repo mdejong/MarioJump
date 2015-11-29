@@ -77,6 +77,8 @@
 		3C13DE271BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
 		3C13DE281BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */; settings = {ASSET_TAGS = (); }; };
 		3C13DE2A1BF6A5130013C7CA /* castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C13DE291BF6A5130013C7CA /* castle.jpg */; settings = {ASSET_TAGS = (); }; };
+		3C6E353B1C0677EB00B00CB7 /* checkerboard_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E353A1C0677EB00B00CB7 /* checkerboard_background.png */; settings = {ASSET_TAGS = (); }; };
+		3C6E353D1C06799600B00CB7 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E353C1C06799600B00CB7 /* empty.png */; settings = {ASSET_TAGS = (); }; };
 		3CA810881C045067002A6238 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA80F3A1C045066002A6238 /* GLProgram.m */; settings = {ASSET_TAGS = (); }; };
 		3CA810891C045067002A6238 /* GPUImage3x3ConvolutionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA80F3D1C045066002A6238 /* GPUImage3x3ConvolutionFilter.m */; settings = {ASSET_TAGS = (); }; };
 		3CA8108A1C045067002A6238 /* GPUImage3x3TextureSamplingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA80F3F1C045066002A6238 /* GPUImage3x3TextureSamplingFilter.m */; settings = {ASSET_TAGS = (); }; };
@@ -379,6 +381,8 @@
 		3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_alpha_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
 		3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioRendered_960_640_rgb_CRF_20_24BPP.m4v; sourceTree = "<group>"; };
 		3C13DE291BF6A5130013C7CA /* castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castle.jpg; sourceTree = "<group>"; };
+		3C6E353A1C0677EB00B00CB7 /* checkerboard_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkerboard_background.png; sourceTree = "<group>"; };
+		3C6E353C1C06799600B00CB7 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
 		3CA80F391C045066002A6238 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
 		3CA80F3A1C045066002A6238 /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
 		3CA80F3B1C045066002A6238 /* GPUImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
@@ -771,6 +775,8 @@
 			isa = PBXGroup;
 			children = (
 				3C13DE291BF6A5130013C7CA /* castle.jpg */,
+				3C6E353A1C0677EB00B00CB7 /* checkerboard_background.png */,
+				3C6E353C1C06799600B00CB7 /* empty.png */,
 				3C13DE251BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v */,
 				3C13DE261BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v */,
 				3CCF81071BFB161000E6508B /* MarioRendered_960_640_green.m4v */,
@@ -1311,6 +1317,7 @@
 				TargetAttributes = {
 					3C13DD511BF680180013C7CA = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 9F74CLHA49;
 					};
 				};
 			};
@@ -1345,8 +1352,10 @@
 				3C13DE271BF690540013C7CA /* MarioRendered_960_640_alpha_CRF_20_24BPP.m4v in Resources */,
 				3CA811271C045067002A6238 /* Info.plist in Resources */,
 				3CCF81081BFB161000E6508B /* MarioRendered_960_640_green.m4v in Resources */,
+				3C6E353B1C0677EB00B00CB7 /* checkerboard_background.png in Resources */,
 				3C13DE281BF690540013C7CA /* MarioRendered_960_640_rgb_CRF_20_24BPP.m4v in Resources */,
 				3C13DE1B1BF682F60013C7CA /* sm64_mario_hoo.wav in Resources */,
+				3C6E353D1C06799600B00CB7 /* empty.png in Resources */,
 				3C13DD711BF681D40013C7CA /* RedButtonDownAlpha.png in Resources */,
 				3C13DD721BF681D40013C7CA /* RedButtonUpAlpha.png in Resources */,
 				3C13DD631BF680190013C7CA /* Main.storyboard in Resources */,
@@ -1693,11 +1702,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MarioJump/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comp.helpurock.MarioJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1706,12 +1718,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = YES;
 				INFOPLIST_FILE = MarioJump/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comp.helpurock.MarioJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

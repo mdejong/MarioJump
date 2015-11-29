@@ -11,4 +11,6 @@
 
 //#define ENABLE_SOUND
 
+#define GPUIMAGEWORKAROUND
+
 #endif /* common_h */

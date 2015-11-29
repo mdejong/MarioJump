@@ -15,6 +15,8 @@
 #import "GPUImageView.h"
 #import "GPUImageMovie.h"
 #import "GPUImageChromaKeyFilter.h"
+#import "GPUImageChromaKeyBlendFilter.h"
+#import "GPUImagePicture.h"
 
 @interface SecondViewController ()
 
@@ -24,9 +26,11 @@
 
 @property (nonatomic, retain) IBOutlet GPUImageView *marioView;
 
+@property (nonatomic, retain) GPUImagePicture *sourcePicture;
+
 @property (nonatomic, retain) GPUImageMovie *movieFile;
 
-@property (nonatomic, retain) GPUImageChromaKeyFilter *filter;
+@property (nonatomic, retain) id filter;
 
 @end
 
@@ -60,8 +64,34 @@
   
   //self.marioView.backgroundColor = [UIColor greenColor];
   
-  self.marioView.backgroundColor = [UIColor clearColor];
+  //self.marioView.backgroundColor = [UIColor clearColor];
   
+  if ((0)) {
+    NSString *resFilename = @"checkerboard_background.png";
+    NSString *resPath = [self.class getResourcePath:resFilename];
+    UIImage *img = [UIImage imageWithContentsOfFile:resPath];
+    UIColor *pattern = [UIColor colorWithPatternImage:img];
+    [self.marioView setBackgroundColor:pattern];
+  }
+  
+  if ((0)) {
+    NSString *resFilename = @"empty.png";
+    NSString *resPath = [self.class getResourcePath:resFilename];
+    UIImage *img = [UIImage imageWithContentsOfFile:resPath];
+    UIColor *pattern = [UIColor colorWithPatternImage:img];
+    [self.marioView setBackgroundColor:pattern];
+    
+//    self.marioView.backgroundColor = [UIColor clearColor];
+//    [self.marioView setBackgroundColorRed:0.0 green:0.0 blue:0.0 alpha:0.0];
+  }
+
+  if ((1)) {
+    self.marioView.backgroundColor = [UIColor clearColor];
+    
+    [self.marioView setBackgroundColorRed:0.0 green:0.0 blue:0.0 alpha:0.0];
+  }
+  
+//  self.marioView.opaque = TRUE;
   self.marioView.opaque = FALSE;
   
   self.marioView.hidden = FALSE;
@@ -72,19 +102,31 @@
   NSAssert(sampleURL, @"sampleURL");
   GPUImageMovie *movieFile = [[GPUImageMovie alloc] initWithURL:sampleURL];
   
+#if defined(GPUIMAGEWORKAROUND)
+  GPUImageChromaKeyBlendFilter *filter = [[GPUImageChromaKeyBlendFilter alloc] init];
+#else
   GPUImageChromaKeyFilter *filter = [[GPUImageChromaKeyFilter alloc] init];
+#endif // GPUIMAGEWORKAROUND
   
   [filter setColorToReplaceRed:0.0 green:1.0 blue:0.0];
   [filter setThresholdSensitivity:0.4];
   
   [movieFile addTarget:filter];
   
+#if defined(GPUIMAGEWORKAROUND)
+//  NSString *resFilename = @"checkerboard_background.png";
+  NSString *resFilename = @"empty.png";
+  UIImage *inputImage = [UIImage imageNamed:resFilename];
+  GPUImagePicture *sourcePicture = [[GPUImagePicture alloc] initWithImage:inputImage smoothlyScaleOutput:YES];
+  [sourcePicture addTarget:filter];
+  self.sourcePicture = sourcePicture;
+#else
+#endif // GPUIMAGEWORKAROUND
+  
   [filter addTarget:self.marioView];
   
   //self.marioView.fillMode = kGPUImageFillModeStretch;
   self.marioView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
-  
-//  [movieFile startProcessing];
   
   self.movieFile = movieFile;
   
@@ -101,6 +143,10 @@
   [self makeVideoPlayer];
   
   [self.movieFile startProcessing];
+  
+#if defined(GPUIMAGEWORKAROUND)
+  [self.sourcePicture processImage];
+#endif // GPUIMAGEWORKAROUND
   
   return;
 }
@@ -126,6 +172,10 @@
   
   [self.movieFile startProcessing];
   
+#if defined(GPUIMAGEWORKAROUND)
+  [self.sourcePicture processImage];
+#endif // GPUIMAGEWORKAROUND
+  
   return;
 }
 
@@ -134,6 +184,14 @@
   [super viewDidLayoutSubviews];
   
   NSLog( @"viewDidLayoutSubviews with mario dimensions %d x %d", (int)self.marioView.frame.size.width, (int)self.marioView.frame.size.height );
+}
+
++ (NSString*) getResourcePath:(NSString*)resFilename
+{
+  NSBundle* appBundle = [NSBundle mainBundle];
+  NSString* movieFilePath = [appBundle pathForResource:resFilename ofType:nil];
+  NSAssert(movieFilePath, @"movieFilePath is nil");
+  return movieFilePath;
 }
 
 @end
