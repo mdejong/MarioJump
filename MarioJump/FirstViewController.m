@@ -142,9 +142,14 @@
 //  self.marioView.backgroundColor = [UIColor greenColor];
 //  self.marioView.backgroundColor = [UIColor blueColor];
 //  self.marioView.backgroundColor = [UIColor redColor];
-  self.marioView.backgroundColor = [UIColor clearColor];
+//  self.marioView.backgroundColor = [UIColor clearColor];
   
   self.marioView.hidden = FALSE;
+  
+  if ((0)) {
+    // PHony logic to show an alpha channel X over the background
+    self.marioView.image = [UIImage imageNamed:@"X"];
+  }
   
   [self.marioView attachMedia:self.marioMedia];
 

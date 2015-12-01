@@ -3,8 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--AVAnimator-->
@@ -45,7 +45,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="2:3" id="6tG-SV-J1k"/>
+                            <constraint firstItem="8Xk-pF-Kff" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="2:3" id="6tG-SV-J1k"/>
                             <constraint firstItem="tzi-0j-Ru2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Cnn-YO-cVP"/>
                             <constraint firstItem="8Xk-pF-Kff" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="TcJ-GC-cQv"/>
                             <constraint firstItem="wk5-UP-xZa" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="ZC7-wo-DiD"/>
@@ -108,7 +108,7 @@
                         <constraints>
                             <constraint firstItem="3ni-6U-HPN" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" id="BP5-4R-bvz"/>
                             <constraint firstItem="Vsi-fP-AeW" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="D1i-s3-4QW"/>
-                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="2:3" id="Hna-jf-e8J"/>
+                            <constraint firstItem="Vsi-fP-AeW" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="width" multiplier="2:3" id="Hna-jf-e8J"/>
                             <constraint firstItem="Vsi-fP-AeW" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="ovs-sR-hXV"/>
                             <constraint firstItem="MSu-vB-NHP" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="30" id="pMC-g2-2c1"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>

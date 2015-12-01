@@ -63,6 +63,7 @@
   //self.marioView.backgroundColor = [UIColor redColor];
   
   //self.marioView.backgroundColor = [UIColor greenColor];
+  //[self.marioView setBackgroundColorRed:0.0 green:1.0 blue:0.0 alpha:1.0];
   
   //self.marioView.backgroundColor = [UIColor clearColor];
   
@@ -102,6 +103,8 @@
   NSAssert(sampleURL, @"sampleURL");
   GPUImageMovie *movieFile = [[GPUImageMovie alloc] initWithURL:sampleURL];
   
+  movieFile.playAtActualSpeed = TRUE;
+  
 #if defined(GPUIMAGEWORKAROUND)
   GPUImageChromaKeyBlendFilter *filter = [[GPUImageChromaKeyBlendFilter alloc] init];
 #else
@@ -125,8 +128,9 @@
   
   [filter addTarget:self.marioView];
   
-  //self.marioView.fillMode = kGPUImageFillModeStretch;
-  self.marioView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
+  self.marioView.fillMode = kGPUImageFillModeStretch;
+  //self.marioView.fillMode = kGPUImageFillModePreserveAspectRatio;
+  //self.marioView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
   
   self.movieFile = movieFile;
   
