@@ -96,8 +96,11 @@
   }
 #endif
 
+  // 2 FPS
+  media.animatorFrameDuration = 1.0/2;
+  
   // Play slowly at half speed
-  media.animatorFrameDuration = AVAnimator5FPS;
+  //media.animatorFrameDuration = AVAnimator5FPS;
   
   // Play video quickly (as opposed to 10 FPS)
 //  media.animatorFrameDuration = AVAnimator24FPS;

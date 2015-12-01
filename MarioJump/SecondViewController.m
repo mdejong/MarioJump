@@ -99,9 +99,11 @@
   
   // Create GPUImage filter
   
-  NSURL *sampleURL = [[NSBundle mainBundle] URLForResource:@"MarioRendered_960_640_green" withExtension:@"m4v"];
+  NSURL *sampleURL = [[NSBundle mainBundle] URLForResource:@"MarioRendered_960_640_green_CRF20" withExtension:@"m4v"];
   NSAssert(sampleURL, @"sampleURL");
   GPUImageMovie *movieFile = [[GPUImageMovie alloc] initWithURL:sampleURL];
+  
+  // Play at 2FPS so that each frame can be seen against the background
   
   movieFile.playAtActualSpeed = TRUE;
   
