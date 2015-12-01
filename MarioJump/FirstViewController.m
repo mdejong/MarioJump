@@ -121,9 +121,11 @@
     // nop since looping
     NSLog( @"animatorDoneNotification : already looping" );
   } else {
-    NSLog( @"animatorDoneNotification : show frame 0 for eyes closed" );
-    
-    [self.marioMedia showFrame:0];
+//    NSLog( @"animatorDoneNotification : show frame 0 for eyes closed" );
+//    [self.marioMedia showFrame:0];
+
+    NSLog( @"animatorDoneNotification : show frame 0 for eyes open" );
+    [self.marioMedia showFrame:1];
   }
 }
 
