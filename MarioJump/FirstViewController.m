@@ -91,7 +91,9 @@
   media.frameDecoder = frameDecoder;
 
 #if defined(ENABLE_SOUND)
+  if ((0)) {
   resLoader.audioFilename = @"sm64_mario_hoohoo.wav";
+  }
 #endif
 
   // Play slowly at half speed
